@@ -1,0 +1,121 @@
+.landing-page-container {
+  background-image: url(../images/LP-Background.png);
+  background-repeat: no-repeat;
+  background-color: rgba(30, 30, 30, 1);
+  min-height: 100vh;
+  height: fit-content;
+  background-position: center;
+  background-size: cover;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic-title-container {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.title-container {
+  margin-left: 5%;
+}
+
+.title-container h1 {
+  font-weight: 100;
+  color: white;
+  font-style: italic;
+  line-height: 0;
+}
+
+.title-container h3 {
+  font-weight: 100;
+  color: white;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.pic-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pic-name-container h4 {
+  color: white;
+  font-weight: 200;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.icon-container img {
+  align-self: center;
+}
+
+.github-icon {
+  margin-right: 2%;
+}
+
+.icon-container img {
+  height: 50px;
+}
+
+.icon-container img:hover {
+  cursor: pointer;
+  height: 55px;
+}
+
+.resume-button {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 10%;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  align-items: center;
+  background-color: rgba(52, 194, 239, 1);
+}
+
+.resume-button:hover {
+  background-color: rgba(52, 195, 239, 0.516);
+  cursor: pointer;
+}
+
+.resume-button h3 {
+  color: black;
+  margin-left: 20px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+  .pic-title-container {
+    flex-direction: column;
+  }
+  .pic-name-container {
+    margin-bottom: 5%;
+  }
+  .icon-container {
+    justify-content: center;
+  }
+  .title-container {
+    margin: 0;
+    text-align: center;
+  }
+  .title-container h1 {
+    line-height: normal;
+  }
+  .landing-page-container {
+    background-image: none;
+  }
+}
