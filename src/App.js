@@ -1,5 +1,6 @@
 import LandingPage from "./components/LandingPage";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 //CSS
 import "./App.css";
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <LandingPage />
       <Projects />
+      <Experience />
     </div>
   );
 }

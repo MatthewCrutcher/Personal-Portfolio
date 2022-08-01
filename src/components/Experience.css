@@ -1,0 +1,40 @@
+.experience-container {
+  min-height: 50vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  justify-content: space-evenly;
+}
+
+.list-container ul {
+  line-height: 60px;
+}
+
+.list-container li {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 900px) {
+  .list-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: flex-start;
+  }
+
+  .list-container ul {
+    margin: 0;
+  }
+  .list-container li {
+    font-size: 1.5rem;
+  }
+}
