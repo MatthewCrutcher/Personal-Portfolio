@@ -3,9 +3,15 @@ import React, { useState } from "react";
 import "./Projects.css";
 //IMAGES
 import ProjectPlaceholder from "../images/ProjectPlaceholder.png";
+import BibleSpeakN from "../images/BibleSpeakN.png";
+import BibleSpeakA from "../images/BibleSpeakA.png";
+import MajorChocolateN from "../images/MajorChocolateN.png";
+import MajorChocolateA from "../images/MajorChocolateA.png";
+
 //
 function Projects() {
   const [active, setActive] = useState(false);
+  const [active2, setActive2] = useState(false);
 
   return (
     <div className="project-container">
@@ -13,13 +19,12 @@ function Projects() {
       <div className="bibleSpeak-container">
         <img
           className="bibleSpeak-project"
-          src={ProjectPlaceholder}
+          src={active ? BibleSpeakA : BibleSpeakN}
           alt="BibleSpeak Project Link"
           onClick={() => window.open("https://bible-speak.herokuapp.com/")}
           onMouseOver={() => setActive(!active)}
           onMouseLeave={() => setActive(false)}
         />
-        {active ? <h1>This is an app for christains</h1> : null}
         <ul>
           <li>React.js</li>
           <li>CSS - Flexbox</li>
@@ -31,9 +36,12 @@ function Projects() {
       </div>
       <div className="majorChocolate-container">
         <img
-          src={ProjectPlaceholder}
+          className="majorChocolate-project"
+          src={active2 ? MajorChocolateA : MajorChocolateN}
           alt="MajorChocolate Project Link"
           onClick={() => window.open("https://major-chocolate.herokuapp.com/")}
+          onMouseOver={() => setActive2(!active2)}
+          onMouseLeave={() => setActive2(false)}
         />
         <ul>
           <li>React.js</li>

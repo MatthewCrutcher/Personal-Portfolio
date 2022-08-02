@@ -19,6 +19,14 @@
   margin-left: 5%;
 }
 
+.bibleSpeak-project:hover {
+  cursor: pointer;
+}
+
+.majorChocolate-project:hover {
+  cursor: pointer;
+}
+
 .bibleSpeak-container ul {
   align-self: center;
   line-height: 60px;
