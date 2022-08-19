@@ -2,7 +2,6 @@ import React, { useState } from "react";
 //CSS
 import "./Projects.css";
 //IMAGES
-import ProjectPlaceholder from "../images/ProjectPlaceholder.png";
 import BibleSpeakN from "../images/BibleSpeakN.png";
 import BibleSpeakA from "../images/BibleSpeakA.png";
 import MajorChocolateN from "../images/MajorChocolateN.png";

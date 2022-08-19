@@ -2,10 +2,10 @@ import React from "react";
 //CSS
 import "./LandingPage.css";
 //IMAGES
-import PicPlaceholder from "../images/PicPlaceholder.png";
+
 import GitHubIcon from "../images/github-icon.png";
 import LinkedInIcon from "../images/linkedin-icon.png";
-import PdfIcon from "../images/pdf-icon.png";
+
 import profilePic from "../images/profilePic.png";
 /* <button className="resume-button">
               <img src={PdfIcon} alt="PDF Icon" />
