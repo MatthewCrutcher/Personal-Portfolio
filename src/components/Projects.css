@@ -19,6 +19,34 @@
   margin-left: 5%;
 }
 
+.project-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-button-container button {
+  min-width: fit-content;
+  width: 35%;
+  min-height: fit-content;
+  height: 4vh;
+  align-self: center;
+  background-color: rgba(52, 194, 239, 1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 1vh;
+}
+
+.project-button-container button:hover {
+  cursor: pointer;
+  background-color: rgb(36, 136, 167);
+}
+
+.project-button-container p {
+  margin: 0;
+  font-size: 1rem;
+  font-style: italic;
+}
+
 .bibleSpeak-project:hover {
   cursor: pointer;
 }

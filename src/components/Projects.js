@@ -16,14 +16,22 @@ function Projects() {
     <div className="project-container">
       <h1>Projects</h1>
       <div className="bibleSpeak-container">
-        <img
-          className="bibleSpeak-project"
-          src={active ? BibleSpeakA : BibleSpeakN}
-          alt="BibleSpeak Project Link"
-          onClick={() => window.open("https://bible-speak.herokuapp.com/")}
-          onMouseOver={() => setActive(!active)}
-          onMouseLeave={() => setActive(false)}
-        />
+        <div className="project-button-container">
+          <img
+            className="bibleSpeak-project"
+            src={active ? BibleSpeakA : BibleSpeakN}
+            alt="BibleSpeak Project Link"
+            onClick={() => window.open("https://bible-speak.herokuapp.com/")}
+            onMouseOver={() => setActive(!active)}
+            onMouseLeave={() => setActive(false)}
+          />
+          <button
+            onClick={() => window.open("https://bible-speak.herokuapp.com/")}
+          >
+            <p>View</p>
+          </button>
+        </div>
+
         <ul>
           <li>React.js</li>
           <li>CSS - Flexbox</li>
@@ -34,14 +42,25 @@ function Projects() {
         </ul>
       </div>
       <div className="majorChocolate-container">
-        <img
-          className="majorChocolate-project"
-          src={active2 ? MajorChocolateA : MajorChocolateN}
-          alt="MajorChocolate Project Link"
-          onClick={() => window.open("https://major-chocolate.herokuapp.com/")}
-          onMouseOver={() => setActive2(!active2)}
-          onMouseLeave={() => setActive2(false)}
-        />
+        <div className="project-button-container">
+          <img
+            className="majorChocolate-project"
+            src={active2 ? MajorChocolateA : MajorChocolateN}
+            alt="MajorChocolate Project Link"
+            onClick={() =>
+              window.open("https://major-chocolate.herokuapp.com/")
+            }
+            onMouseOver={() => setActive2(!active2)}
+            onMouseLeave={() => setActive2(false)}
+          />
+          <button
+            onClick={() =>
+              window.open("https://major-chocolate.herokuapp.com/")
+            }
+          >
+            <p>View</p>
+          </button>
+        </div>
         <ul>
           <li>React.js</li>
           <li>CSS - Flexbox, Grid</li>
