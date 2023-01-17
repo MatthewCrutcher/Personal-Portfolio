@@ -6,6 +6,7 @@ import BibleSpeakN from "../images/BibleSpeakN.png";
 import BibleSpeakA from "../images/BibleSpeakA.png";
 import MajorChocolateN from "../images/MajorChocolateN.png";
 import MajorChocolateA from "../images/MajorChocolateA.png";
+import ForexApp from "../images/ForexApp.png";
 
 //
 function Projects() {
@@ -66,6 +67,32 @@ function Projects() {
           <li>CSS - Flexbox, Grid</li>
           <li>API Call</li>
           <li>Redux Toolkit</li>
+          <li>React Hooks</li>
+        </ul>
+      </div>
+      <div className="bibleSpeak-container">
+        <div className="project-button-container">
+          <img
+            className="bibleSpeak-project"
+            src={ForexApp}
+            alt="BibleSpeak Project Link"
+            onClick={() => window.open("https://bible-speak.herokuapp.com/")}
+            onMouseOver={() => setActive(!active)}
+            onMouseLeave={() => setActive(false)}
+          />
+          <button
+            onClick={() => window.open("https://bible-speak.herokuapp.com/")}
+          >
+            <p>View</p>
+          </button>
+        </div>
+
+        <ul>
+          <li>React.js</li>
+          <li>CSS - Flexbox</li>
+          <li>Axios</li>
+          <li>ReCharts</li>
+          <li>React Context</li>
           <li>React Hooks</li>
         </ul>
       </div>
